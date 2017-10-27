@@ -8,9 +8,9 @@ namespace OOP3
 {
     partial class MyData
     {
-        private static int _second;
-        private static int _minute;
-        private static int _hour;
+        private int _second;
+        private int _minute;
+        private int _hour;
         public int Second
         {
             get

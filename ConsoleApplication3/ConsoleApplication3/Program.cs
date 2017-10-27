@@ -64,9 +64,6 @@ namespace OOP3
             int hash = mydata[0].GetHashCode();
             Console.WriteLine("\nhash[0] = " + hash);
             Console.WriteLine(mydata[0].ToString());
-
-            Console.WriteLine("Press any key...");
-            Console.ReadKey();
         }
     }
 }

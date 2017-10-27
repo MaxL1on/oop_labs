@@ -138,10 +138,9 @@ namespace OOP4
                 for (int i = 0; i < obj.stud.Count; i++)
                 {
                     if (obj.stud[i] == "")
-                    { return false; }
-                    else
-                    { return true; }
+                        return false;
                 }
+                return true;
             }
 
             public static bool operator true(Lion obj)
@@ -149,10 +148,9 @@ namespace OOP4
                 for (int i = 0; i < obj.stud.Count; i++)
                 {
                     if (obj.stud[i] == "")
-                    { return true; }
-                    else
-                    { return false; }
+                        return true;
                 }
+                return false;
             }
             
             //public static explicit operator int(Lion obj)
