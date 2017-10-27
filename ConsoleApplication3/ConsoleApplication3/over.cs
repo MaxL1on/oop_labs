@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace esketit7
+namespace OOP3
 {
    partial class MyData
     {
@@ -15,21 +15,21 @@ namespace esketit7
             MyData m = obj as MyData;
             if (m as MyData == null)
                 return false;
-            return m.second == this.second;
+            return m.Second == this.Second;
         }
 
         public override int GetHashCode()
         {
             int unitCode;
-            if (hours == 0)
+            if (Hour == 0)
                 unitCode = 1;
             else unitCode = 2;
-            return (int)hours + unitCode;
+            return (int)Hour + unitCode;
         }
 
         public override string ToString()
         {
-            return hours+" chasov "+minutes+" minut "+second+" sekund" ;
+            return Hour + " часов " + Minute + " минут " + Second + " секунд";
         }
     }
 }

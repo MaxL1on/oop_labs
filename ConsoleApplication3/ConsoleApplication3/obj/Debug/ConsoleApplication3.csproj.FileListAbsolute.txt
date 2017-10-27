@@ -4,3 +4,9 @@ C:\Users\Лев\Desktop\Пацей ЛК\ConsoleApplication3\ConsoleApplication3\
 C:\Users\Лев\Desktop\Пацей ЛК\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
 C:\Users\Лев\Desktop\Пацей ЛК\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
 C:\Users\Лев\Desktop\Пацей ЛК\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\Лев\Desktop\oop_labs\oop_labs\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csproj.CoreCompileInputs.cache
+C:\Users\Лев\Desktop\oop_labs\oop_labs\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\Лев\Desktop\oop_labs\oop_labs\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\Лев\Desktop\oop_labs\oop_labs\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\Лев\Desktop\oop_labs\oop_labs\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\Лев\Desktop\oop_labs\oop_labs\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb

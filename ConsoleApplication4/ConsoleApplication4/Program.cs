@@ -33,7 +33,7 @@ namespace OOP4
     class Program
     {
 
-        class Lion
+        partial class Lion
         {
             private List<string> stud { get; set; }
 
@@ -135,49 +135,26 @@ namespace OOP4
 
             public static bool operator false(Lion obj)
             {
-                    if (obj.stud == null)
-                        return true;
+                for (int i = 0; i < obj.stud.Count; i++)
+                {
+                    if (obj.stud[i] == "")
+                    { return false; }
                     else
-                        return false;
+                    { return true; }
+                }
             }
 
             public static bool operator true(Lion obj)
             {
-                if (obj.stud == null)
-                    return false;
-                else
-                    return true;
+                for (int i = 0; i < obj.stud.Count; i++)
+                {
+                    if (obj.stud[i] == "")
+                    { return true; }
+                    else
+                    { return false; }
+                }
             }
-
-
-
-
-            //public static bool operator >(Lion obj1, Lion obj2)
-            //{
-            //    string g = "0", j = "null";
-            //    for (int i = 0; i < obj1.stud.Count; i++)
-            //    {
-            //        g = g + obj1.stud[i];
-            //        j = j + obj2.stud[i];
-            //    }
-            //    if (g > j) return true;
-            //    else
-            //        return false;
-            //}
-
-            //public static bool operator <(Lion obj1, Lion obj2)
-            //{
-            //    string g = "0", j = "null";
-            //    for (int i = 0; i < obj1.stud.Count; i++)
-            //    {
-            //        g = g + obj1.stud[i];
-            //        j = j + obj2.stud[i];
-            //    }
-            //    if (g < j) return true;
-            //    else
-            //        return false;
-            //}
-
+            
             //public static explicit operator int(Lion obj)
             //{
             //    return obj.stud.Count;
@@ -218,27 +195,19 @@ namespace OOP4
             Lion stud2 = new Lion(new List<string> { "ras", "ras", "eto", "hardbass" });
             Lion stud3 = new Lion(new List<string> { "lol", "kek", "shish-kebab" });
             Lion stud4 = new Lion(new List<string> { "lol", "kek", "shish-kebab" });
-            Lion stud5 = new Lion(10);
+            Lion stud5 = new Lion(new List<string> { "lol", "", "shish-kebab", "" });
 
-            if (stud5) { Console.WriteLine("hui"); }
-            stud1 = stud1 + "hui";
+            if (stud5) { Console.WriteLine("over\n"); }
+            stud1 = stud1 + "added";
             stud1.Vivod();
             stud1--;
             stud5.Vivod();
-            Console.WriteLine(stud3 != stud4);
-            //Lion stud3 = stud2 * stud1;
-            //stud3.Vivod();
-            //int a = (int)stud3;
-            //if (stud2 != stud1)
-            //    Console.WriteLine("sas");
-            //if (stud2)
-            //    Console.WriteLine("ses");
-            //else
-            //    Console.WriteLine("sos");
-            //if (stud2 > stud1)
-            //    Console.WriteLine("sasssssss");
-            //stud1.Ownerrr();
+            Console.Write("stud3 != stud4 is {0}", stud3 != stud4);
+            Console.Write("\nstud1 != stud2 is {0}\n", stud1 != stud2);
+            stud1.Ownerrr();
             Lion.Date time = new Lion.Date(12, 08, 2017);
+            Console.WriteLine("\nPress any key..");
+            Console.ReadKey();
         }
     }
 }
